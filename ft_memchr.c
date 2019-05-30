@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
-i/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 17:36:10 by nmafa             #+#    #+#             */
-/*   Updated: 2019/05/29 12:26:36 by nmafa            ###   ########.fr       */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/29 11:30:17 by nmafa             #+#    #+#             */
+/*   Updated: 2019/05/29 11:31:38 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncpy(char *dst, const char *src, size_t len);
+int		memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	else (i < n)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	return (dst);
-}
