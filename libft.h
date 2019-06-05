@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:22:29 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/04 18:15:37 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/05 18:08:34 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
+
+size_t	ft_strlen(const char *str);
 #endif

@@ -6,7 +6,7 @@
 #    By: nmafa <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 16:27:06 by nmafa             #+#    #+#              #
-#    Updated: 2019/06/04 18:03:00 by nmafa            ###   ########.fr        #
+#    Updated: 2019/06/05 17:08:43 by nmafa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ft_putchar.c\
 	  ft_putnbr_fd.c\
 	  ft_toupper.c\
 	  ft_toupper.c\
-	  ft_ascii.c\
+	  ft_isascii.c\
 	  ft_isdigit.c\
 	  ft_isalpha.c\
 	  ft_isalnum.c\
