@@ -6,7 +6,7 @@
 #    By: nmafa <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 16:27:06 by nmafa             #+#    #+#              #
-#    Updated: 2019/06/05 17:08:43 by nmafa            ###   ########.fr        #
+#    Updated: 2019/06/06 16:42:05 by nmafa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,8 @@ SRC = ft_putchar.c\
 	  ft_strcpy.c\
 	  ft_strncpy.c\
 	  ft_strlen.c\
-
+	  ft_memset.c\
+	  ft_bzero.c\
 
 OBJ = $(SRC:.c=.o)
 
