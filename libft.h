@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:22:29 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/13 17:12:12 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/15 18:13:00 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	ft_putnbr_fd(int n, int fd);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dst,const void *src, int c,size_t n);
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
