@@ -6,8 +6,19 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/17 18:15:15 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/17 18:15:24 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/18 13:56:41 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
+void	*ft_memalloc(size_t size)
+{
+	void	*m;
+
+	m = malloc(size);
+	if (m == NULL)
+		return (NULL);
+	ft_bzero(m, size);
+	return (m);
+}

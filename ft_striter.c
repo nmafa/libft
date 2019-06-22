@@ -6,8 +6,13 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/17 18:14:05 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/17 18:14:19 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/19 17:29:49 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void ft_striter(char *s, void (*f)(char *))
+{
+	unsigned int	i;
 
