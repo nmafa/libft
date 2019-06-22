@@ -6,7 +6,7 @@
 #    By: nmafa <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 16:27:06 by nmafa             #+#    #+#              #
-#    Updated: 2019/06/15 18:11:21 by nmafa            ###   ########.fr        #
+#    Updated: 2019/06/22 01:13:07 by nmafa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ SRC = ft_putchar.c\
 	  ft_putstr_fd.c\
 	  ft_putendl.c\
 	  ft_putendl_fd.c\
-	  ft_putnbr.c\
+	 // ft_putnbr.c\
 	  ft_putnbr_fd.c\
 	  ft_toupper.c\
 	  ft_toupper.c\
@@ -40,6 +40,11 @@ SRC = ft_putchar.c\
 	  ft_memchr.c\
 	  ft_memcpy.c\
 	  ft_memccpy.c\
+	  ft_memalloc.c\
+	  ft_memmove.c\
+	  ft_memdel.c\
+	  ft_memcmp.c\
+	  
 
 OBJ = $(SRC:.c=.o)
 
