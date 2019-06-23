@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/17 18:14:47 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/18 14:38:33 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/23 15:43:17 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	s = (char *)src;
 	if (src < dst)
 	{
-		while ((int) -- len >= 0)
+		while ((int)--len >= 0)
 			d[len] = s[len];
 	}
 	else

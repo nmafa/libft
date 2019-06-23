@@ -6,14 +6,36 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 17:37:16 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/19 18:48:13 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/23 16:34:19 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr()
+void	ft_putnbr(int n)
 {
-	if (n > 9)
-		ft_putnbr(n / 10);
+	int a;
+	int z;
+
+	a = n;
+	z = 1;
+	if (a < 0)
+	{
+		a = a * -1;
+		ft_putchar('-');
+		n = n * -1;
+	}
+	while (a > 9)
+	{
+		z *= 10;
+		a /= 10;
+	}
+	a = n;
+	while (z > 0)
+	{
+		a = ((n / z) % 10) + 48;
+		ft_putchar(a);
+		z /= 10;
+	}
+	
 }
