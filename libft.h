@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 14:22:29 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/23 17:45:26 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/24 16:43:31 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,18 @@ int		ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_isprint(int c);
+int		ft_atoi(const char *str);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strequ(char const *s1, char const *s2);
 
 char	*ft_strcpy(char *dst, const char *src);
 char	*ft_strncpy(char *dst, const char *src, size_t n);
 char	*ft_strdup(const char *s1);
 char	*ft_strnew(size_t size);
+char	*ft_strmap(char const *s, char (*f)(char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 size_t	ft_strlen(const char *str);
 #endif

@@ -6,7 +6,7 @@
 #    By: nmafa <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 16:27:06 by nmafa             #+#    #+#              #
-#    Updated: 2019/06/23 18:25:58 by nmafa            ###   ########.fr        #
+#    Updated: 2019/06/24 16:43:55 by nmafa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ FLAG = -Wall -Wextra -Werror
 
 SRC = ft_putchar.c\
 	  ft_putstr.c\
+	  ft_atoi.c\
 	  ft_putchar_fd.c\
 	  ft_putstr_fd.c\
 	  ft_putendl.c\
@@ -51,7 +52,6 @@ SRC = ft_putchar.c\
 	  ft_striteri.c\
 	  ft_strmap.c\
 	  ft_strmapi.c\
-
 
 OBJ = $(SRC:.c=.o)
 
