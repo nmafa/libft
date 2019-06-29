@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 18:32:28 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/26 18:37:37 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 00:31:04 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,11 @@ char *ft_strncat(char *s1, const char *s2, size_t n)
 	size_t	m;
 
 	i = 0;
-	m = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[i] '\0' && m < n)
+	m = ft_strlen(s1);
+	while (s2[i] != '\0' && n-- > 0)
 	{
-		s1[i + m] = s2[m]
-			m++;
+		s1[m++] = s2[i++];
 	}
-	s1[i + m] = '\0';
-	return (s1)
+	s1[m] = '\0';
+	return (s1);
 }

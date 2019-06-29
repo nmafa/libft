@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 16:42:00 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/23 15:44:49 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 03:40:32 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,22 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	i;
 	char	*d;
 	char	*s;
+	size_t	i;
 
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;
-	while (i < n)
+	if (src < dst)
+		ft_memmove(dst, src, n);
+	else
 	{
-		d[i] = s[i];
-		i++;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
-	return (dst);
+	return (d);
 }

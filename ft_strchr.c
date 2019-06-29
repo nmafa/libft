@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 18:37:57 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/26 18:42:24 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 00:35:31 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char *ft_strchr(const char *s, int c)
 			return ((char *)s + i);
 		i++;
 	}
-	if	(! c && s[i] == '\0')
+	if	(!c && s[i] == '\0')
 		return ((char *)s + i);
 	return (NULL);
 }

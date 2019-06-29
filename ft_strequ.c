@@ -6,13 +6,19 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:46:04 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/26 18:18:25 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 02:31:41 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int ft_strequ(char const *s1, char const *s2)
+
 {
-	return (strcmp(s1, s2) ? 0 : 1);
+	if (!s1 || !s2)
+		return (-1);
+	if (ft_strcmp(s1, s2))
+		return (0);
+	else
+		return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/04 16:53:00 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/04 17:18:01 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 02:11:18 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	if (s)
+	{
+		ft_putstr(s);
+		ft_putchar('\n');
+	}
 }

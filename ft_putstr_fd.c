@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 15:08:47 by nmafa             #+#    #+#             */
-/*   Updated: 2019/05/23 15:37:55 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 02:13:15 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char const *str, int fd)
 {
 	int i;
 
+	if (!str)
+		return ;
 	i = 0;
 	while(str[i])
 		write(fd, &str[i++], 1);

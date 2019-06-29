@@ -6,33 +6,32 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 13:54:42 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/27 14:00:09 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 04:45:10 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	char *a;
-	int m;
-	int b;
+	char *str;
 
-	m = 1;
-	b = n;
-	while (b > 9)
+	if (!(str = (char *)malloc(sizeof(char) * 2)))
+		return (NULL);
+	if (n == -2147483648)
+		return (ft_strcpy(str, "-2147483648"));
+	if (n < 0)
 	{
-		b = b / 10;
-		m++;
+		str[0] = '-';
+		str[1] = '\0';
+		str = ft_strjoin(str, ft_itoa(-n));
 	}
-	a = ft_strnew(m);
-	b = n;
-	while (t != 0)
+	else if (n >= 10)
+		str = ft_strjoin(ft_itoa(n / 10), ft_itoa(n % 10));
+	else if (n < 10 && n >= 0)
 	{
-		n = (b % 10) + 48;
-		m--;
-		a[m] = n;
-		b = b / 10;
+		str[0] = n + '0';
+		str[1] = '\0';
 	}
-	return [a];
+	return (str);
 }

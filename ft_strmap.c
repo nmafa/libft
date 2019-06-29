@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/24 12:27:10 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/24 12:43:40 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 02:02:57 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char			*str;
 
 	i = 0;
+	if (!s || !f)
+		return(NULL);
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
 	if (str == NULL)
 		return (NULL);

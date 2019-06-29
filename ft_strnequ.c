@@ -6,13 +6,18 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 17:43:03 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/26 18:01:10 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 02:31:31 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strnequ(char const *s1, char const *s2, size_t n)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	return (strncmp(s1, s2) ? 0 : 1);
+	if (!s1 || !s2)
+		return (-1);
+	if (strncmp(s1, s2, n))
+		return (0);
+	else
+		return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: nmafa <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/27 12:28:12 by nmafa             #+#    #+#             */
-/*   Updated: 2019/06/27 12:45:39 by nmafa            ###   ########.fr       */
+/*   Updated: 2019/06/29 00:13:36 by nmafa            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,11 @@ char	*ft_strstr(const char *s1, const char *s2)
 	while (s1[i] != '\0')
 	{
 		m = 0;
-		while (s2
+		while (s2[m] != '\0' && s1[i+m] == s2[m])
+			m++;
+		if (s2[m] == '\0')
+			return ((char *)s1 + i);
+		i++;
+	}
+	return (NULL);
+}

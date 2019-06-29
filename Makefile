@@ -6,7 +6,7 @@
 #    By: nmafa <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/03 16:27:06 by nmafa             #+#    #+#              #
-#    Updated: 2019/06/24 16:43:55 by nmafa            ###   ########.fr        #
+#    Updated: 2019/06/29 05:27:41 by nmafa            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ft_putchar.c\
 	  ft_putnbr.c\
 	  ft_putnbr_fd.c\
 	  ft_toupper.c\
-	  ft_toupper.c\
+	  ft_tolower.c\
 	  ft_isascii.c\
 	  ft_isdigit.c\
 	  ft_isalpha.c\
@@ -52,6 +52,20 @@ SRC = ft_putchar.c\
 	  ft_striteri.c\
 	  ft_strmap.c\
 	  ft_strmapi.c\
+	  ft_strcat.c\
+	  ft_strchr.c\
+	  ft_strdup.c\
+	  ft_strequ.c\
+	  ft_strncat.c\
+	  ft_strnequ.c\
+	  ft_strrchr.c\
+	  ft_strstr.c\
+	  ft_strsub.c\
+	  ft_strnstr.c\
+	  ft_itoa.c\
+	  ft_strtrim.c\
+	  ft_strsplit.c\
+	  
 
 OBJ = $(SRC:.c=.o)
 
